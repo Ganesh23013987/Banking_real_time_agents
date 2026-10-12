@@ -82,6 +82,17 @@ Open the local URL displayed in the terminal, usually `http://localhost:8501`.
 
 The project demonstrates multi-agent coordination in a simulated banking environment. It provides banking query handling, transaction monitoring using predefined rules, and loan EMI calculations through an interactive interface.
 
+## Output:
+
+<img width="1919" height="1013" alt="image" src="https://github.com/user-attachments/assets/c6ceb8e5-d700-4118-8b90-27bd51c375b7" />
+<img width="1920" height="1015" alt="image" src="https://github.com/user-attachments/assets/17162fd7-e860-4556-a4b2-317779a8597b" />
+<img width="1920" height="1019" alt="image" src="https://github.com/user-attachments/assets/38fc883b-2828-4177-934d-0c35c73850bf" />
+<img width="1919" height="1011" alt="image" src="https://github.com/user-attachments/assets/bb55d206-4c9f-4ff3-8d3a-705daf630afe" />
+<img width="1920" height="1017" alt="image" src="https://github.com/user-attachments/assets/1c8a7265-4d5e-4bdf-aeb9-9548c9a5ca43" />
+<img width="1920" height="1017" alt="image" src="https://github.com/user-attachments/assets/c8c6a128-b849-4fd9-968d-1a17a100a610" />
+<img width="1916" height="1012" alt="image" src="https://github.com/user-attachments/assets/6632d286-5332-4106-ad60-ec44184aa0e6" />
+
+
 ## Project Links
 - **GitHub Repository:** https://github.com/Ganesh23013987/Banking_real_time_agents
 - **Live Demo:** https://banking-real-time-agents.onrender.com
