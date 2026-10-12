@@ -1,7 +1,7 @@
 # BankMind Nexus – Simulated Multi-Agent Banking MVP
 
 ## Project Overview
-BankMind Nexus is a simulated banking assistant developed using Python and Streamlit. It uses multiple specialized agents to handle customer banking queries, transaction risk analysis, and loan calculations. Optional Google Gemini integration helps generate natural-language responses.
+BankMind Nexus is a simulated banking assistant developed using Python and Streamlit. It uses multiple specialized agents to handle customer banking queries, transaction risk analysis, and loan calculations.
 
 ## Features
 - **Supervisor Agent:** Routes user queries to the appropriate specialist.
