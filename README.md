@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # BankMind Nexus — Simulated Multi-Agent Banking MVP
+=======
+# Simulated Multi-Agent Banking MVP
+>>>>>>> 6b10981bf0dc5f659dcc4540e23450b10f7789dd
 
 A beginner-friendly Python/Streamlit project demonstrating how a supervisor coordinates three specialist agents in a fictional banking environment.
 
