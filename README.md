@@ -1,111 +1,97 @@
-<<<<<<< HEAD
-# BankMind Nexus — Simulated Multi-Agent Banking MVP
-=======
-# Simulated Multi-Agent Banking MVP
->>>>>>> 6b10981bf0dc5f659dcc4540e23450b10f7789dd
+# BankMind Nexus – Simulated Multi-Agent Banking MVP
 
-A beginner-friendly Python/Streamlit project demonstrating how a supervisor coordinates three specialist agents in a fictional banking environment.
+## Project Overview
+BankMind Nexus is a simulated banking assistant developed using Python and Streamlit. It uses multiple specialized agents to handle customer banking queries, transaction risk analysis, and loan calculations. Optional Google Gemini integration helps generate natural-language responses.
 
 ## Features
+- **Supervisor Agent:** Routes user queries to the appropriate specialist.
+- **Customer Banking Agent:** Retrieves simulated account and transaction information.
+- **Risk/Fraud Agent:** Flags potentially suspicious transactions using predefined rules.
+- **Credit/Loan Agent:** Performs illustrative loan checks and calculates EMI.
+- **Gemini Integration:** Optional AI-powered response generation.
+- **Interactive Dashboard:** Displays banking information and transaction monitoring.
+- **Agent Trace:** Helps demonstrate the agent workflow.
+- **Fallback Mode:** Supports available deterministic responses when Gemini is unavailable.
 
-- **Supervisor Agent** routes a customer's natural-language request.
-- **Customer Banking Agent** retrieves mock customer and transaction information.
-- **Risk/Fraud Agent** flags transactions using explainable demo rules.
-- **Credit/Loan Agent** estimates loan checks and calculates EMI.
-- **Simulated banking tools** act like simple banking API endpoints.
-- **Gemini integration** optionally improves the wording of grounded results.
-- **Fallback mode** works without an API key.
-- **Streamlit UI** provides dashboard, chat, transaction radar and agent trace.
+## Technologies Used
+- Python
+- Streamlit
+- Google Gemini API
+- Pandas
+- JSON and CSV
+- Git and GitHub
+- Render
 
-> Safety note: This is an educational simulation. It does not connect to a bank, use real customer data, approve loans, or prove fraud.
+## System Workflow
+1. The user enters a banking query.
+2. The Supervisor Agent identifies the request type.
+3. The appropriate specialist agent processes the request.
+4. Simulated banking tools provide the required data.
+5. The application prepares a response.
+6. Optional Gemini integration improves the response wording.
+7. The result is displayed in the Streamlit interface.
 
-## Requirements
+## Project Structure
+```text
+BankMind-Nexus/
+├── agents/
+├── data/
+├── tests/
+├── tools/
+├── utils/
+├── app.py
+├── requirements.txt
+├── README.md
+├── .env.example
+└── .gitignore
+```
 
-- Python 3.10 or newer
-- Internet connection only if you want to call Gemini
-- Gemini API key is optional
+## Installation and Setup
 
-## Run on Windows
-
-Open a terminal in this folder and run:
-
+### 1. Clone the repository
 ```bash
-python -m venv .venv
-.venv\\Scripts\\activate
+git clone https://github.com/Ganesh23013987/Banking_real_time_agents.git
+cd Banking_real_time_agents
+```
+
+### 2. Install dependencies
+```bash
 pip install -r requirements.txt
 ```
 
-Optional Gemini setup:
+### 3. Configure Gemini (Optional)
 
-1. Copy `.env.example` to `.env`.
-2. Add your key to `GEMINI_API_KEY`.
-3. Check that `GEMINI_MODEL` is a model available to your API key.
+Set `GEMINI_API_KEY` and, if required by your code, `GEMINI_MODEL` in your local `.env` file. For deployment, configure these variables in Render's Environment settings.
 
-Start the app:
+Never upload your `.env` file or API key to GitHub.
 
+### 4. Run the application
 ```bash
 streamlit run app.py
 ```
 
-The app opens in your browser, usually at `http://localhost:8501`.
+Open the local URL displayed in the terminal, usually `http://localhost:8501`.
 
-## Demo questions
-
+## Sample Queries
 - What is my account balance?
 - Show my recent transactions.
 - Check whether any transaction looks suspicious.
 - Am I eligible for a loan of ₹200000?
 - Calculate EMI for ₹200000 over 24 months at 12% annual interest.
 
-## Architecture
+## Result
+The project demonstrates multi-agent coordination in a simulated banking environment. It provides banking query handling, transaction monitoring using predefined rules, and loan EMI calculations through an interactive interface.
 
-```text
-User
-  |
-  v
-Streamlit UI
-  |
-  v
-Supervisor Agent (intent routing)
-  |-------------|----------------|
-  v             v                v
-Customer Agent  Risk Agent       Credit Agent
-  |             |                |
-  +-------------+----------------+
-                |
-                v
-      Simulated Banking Tools
-                |
-                v
-       Grounded result returned
-                |
-                v
-   Optional Gemini response wording
-```
+## Project Links
+- **GitHub Repository:** https://github.com/Ganesh23013987/Banking_real_time_agents
+- **Live Demo:** https://banking-real-time-agents.onrender.com
 
-## Explanation
+## Limitations
+- Uses simulated banking data.
+- Does not connect to real banking systems.
+- Suspicious transaction flags are illustrative, not proof of fraud.
+- Loan checks are demonstrations, not actual credit decisions.
+- Gemini functionality depends on valid API configuration, model availability, and quota.
 
-"I built BankMind Nexus, a simulated banking application that demonstrates multi-agent collaboration. The user asks a question in a Streamlit chat interface. A supervisor uses simple intent-routing rules to decide which specialist should handle it. The Customer Agent retrieves account and transaction data from mock banking tools, the Risk Agent flags transactions using transparent rules, and the Credit Agent estimates loan eligibility and calculates EMI. An optional Gemini integration rewrites the verified result in natural language without being allowed to invent banking facts. I also added a dashboard and an agent trace page so the flow can be demonstrated. All data is fictional and no real banking API is connected."
-
-## Important design choices
-
-- Routing is intentionally simple and explainable; this is suitable for an MVP interview demo.
-- Risk scoring is a demo indicator, not a trained fraud model or production fraud probability.
-- Loan eligibility is illustrative, not a real credit decision.
-- If the Gemini key is absent or the API call fails, deterministic application results are still returned.
-- Do not commit `.env` or any API key to GitHub.
-
-## Upload to GitHub
-
-Create a new empty repository on GitHub, then run these commands in the project directory:
-
-```bash
-git init
-git add .
-git commit -m "Build BankMind Nexus multi-agent banking MVP"
-git branch -M main
-git remote add origin https://github.com/YOUR_USERNAME/BankMind-Nexus.git
-git push -u origin main
-```
-
-Replace `YOUR_USERNAME` with your GitHub username. Confirm `.env` is not staged before pushing.
+## Conclusion
+BankMind Nexus demonstrates how a Supervisor Agent and specialized agents can work together to provide simulated banking assistance. The project combines Python, Streamlit, and optional Gemini integration in a modular and interactive application.
