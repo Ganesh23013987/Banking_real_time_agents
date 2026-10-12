@@ -18,7 +18,7 @@ from agents.supervisor import handle_request
 # =========================================================
 
 st.set_page_config(
-    page_title="BankMind Nexus",
+    page_title="SmartBank AI",
     page_icon="🏦",
     layout="wide",
 )
@@ -191,7 +191,7 @@ def fast_local_response(prompt, customer, transactions):
     if normalized in greetings:
         return {
             "answer": (
-                "Hi! 👋 Welcome to BankMind Nexus. "
+                "Hi! 👋 Welcome to SmartBank AI. "
                 "I can help you check your demo account balance, "
                 "review transactions, flag suspicious activity, "
                 "and calculate loan EMIs. What would you like to do?"
@@ -283,7 +283,7 @@ if st.session_state.user is None:
 
     st.markdown("""
     <div class="hero">
-        <h1>🏦 BankMind Nexus</h1>
+        <h1>🏦 SmartBank AI</h1>
         <p>
             Simulated banking with intelligent multi-agent automation.
         </p>
@@ -389,7 +389,7 @@ df = pd.DataFrame(transactions)
 
 with st.sidebar:
 
-    st.title("🏦 BankMind Nexus")
+    st.title("🏦 SmartBank AI")
     st.caption("MULTI-AGENT BANKING MVP")
 
     st.success(f"Signed in as {user['name']}")
