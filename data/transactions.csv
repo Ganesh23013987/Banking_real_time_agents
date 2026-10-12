@@ -1,0 +1,9 @@
+date,description,category,amount,type,status
+2026-10-10,Salary Credit,Income,45000,credit,normal
+2026-10-09,Groceries,Shopping,2450,debit,normal
+2026-10-08,Electricity Bill,Utilities,1800,debit,normal
+2026-10-07,Online Purchase,Shopping,24500,debit,review
+2026-10-06,Restaurant,Food,950,debit,normal
+2026-10-05,ATM Withdrawal,Cash,5000,debit,normal
+2026-10-04,Fuel,Transport,2200,debit,normal
+2026-10-03,Mobile Recharge,Utilities,399,debit,normal
