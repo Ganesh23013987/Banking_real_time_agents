@@ -79,7 +79,7 @@ Open the local URL displayed in the terminal, usually `http://localhost:8501`.
 - Am I eligible for a loan of ₹200000?
 - Calculate EMI for ₹200000 over 24 months at 12% annual interest.
 
-## Result
+
 The project demonstrates multi-agent coordination in a simulated banking environment. It provides banking query handling, transaction monitoring using predefined rules, and loan EMI calculations through an interactive interface.
 
 ## Project Links
