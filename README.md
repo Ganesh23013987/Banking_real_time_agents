@@ -1,7 +1,7 @@
-# BankMind Nexus – Simulated Multi-Agent Banking MVP
+# SmartBank AI – Simulated Multi-Agent Banking MVP
 
 ## Project Overview
-BankMind Nexus is a simulated banking assistant developed using Python and Streamlit. It uses multiple specialized agents to handle customer banking queries, transaction risk analysis, and loan calculations.
+SmartBank AI is a simulated banking assistant developed using Python and Streamlit. It uses multiple specialized agents to handle customer banking queries, transaction risk analysis, and loan calculations.
 
 ## Features
 - **Supervisor Agent:** Routes user queries to the appropriate specialist.
@@ -94,4 +94,4 @@ The project demonstrates multi-agent coordination in a simulated banking environ
 - Gemini functionality depends on valid API configuration, model availability, and quota.
 
 ## Conclusion
-BankMind Nexus demonstrates how a Supervisor Agent and specialized agents can work together to provide simulated banking assistance. The project combines Python, Streamlit, and optional Gemini integration in a modular and interactive application.
+SmartBank AI demonstrates how a Supervisor Agent and specialized agents can work together to provide simulated banking assistance. The project combines Python, Streamlit, and optional Gemini integration in a modular and interactive application.
